@@ -1,5 +1,6 @@
 /**
  * Created by wangsh on 2016/3/17.
+ * 基于mysql的操作 ，暂时还有问题。
  */
 var mysql = require('mysql');
 var DB_NAME = 'mi';
