@@ -25,6 +25,7 @@ module.exports = User;
 pool.getConnection(function(err, connection) {
 
     console.log(pool);
+
    // var useDbSql = "USE " + DB_NAME;
   //  connection.query(useDbSql, function (err) {
    //     if (err) {
