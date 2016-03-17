@@ -6,7 +6,7 @@ function access(req,res,next){
     if(now <13 || now >18){
         console.log("time is error");
         res.writeHead(503,{'Content-Type':'text/plain'});
-        res.end('下午1点到6点之外禁止访问！');
+        res.end('abc');
     }else{
         next();
     }
