@@ -1,6 +1,6 @@
 /**
- * Created by wangsh on 2016/3/17.
- * »ùÓÚmysqlµÄ²Ù×÷ £¬ÔÝÊ±»¹ÓÐÎÊÌâ¡£
+ * Created by wangsh on 2016/3/18.
+ * ï¿½ï¿½ï¿½ï¿½mysqlï¿½Ä²ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¡£
  */
 var mysql = require('mysql');
 var DB_NAME = 'mi';
@@ -36,7 +36,7 @@ pool.getConnection(function(err, connection) {
     //    console.log('USE succeed');
    // });
 
-    //±£´æÊý¾Ý
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     User.prototype.save = function save(callback) {
         var user = {
             username: this.username,
@@ -60,7 +60,7 @@ pool.getConnection(function(err, connection) {
         });
     };
 
-    //¸ù¾ÝÓÃ»§ÃûµÃµ½ÓÃ»§ÊýÁ¿
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
     User.getUserNumByName = function getUserNumByName(username, callback) {
 
 
@@ -81,7 +81,7 @@ pool.getConnection(function(err, connection) {
         });
     };
 
-    //¸ù¾ÝÓÃ»§ÃûµÃµ½ÓÃ»§ÐÅÏ¢
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ï¢
     User.getUserByUserName = function getUserByUserName(username, callback) {
 
         var getUserByUserName_Sql = " SELECT * FROM userinfo WHERE username = ? ";
